@@ -13,9 +13,9 @@ package binaryheap
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/lists/arraylist"
-	"github.com/emirpasic/gods/trees"
-	"github.com/emirpasic/gods/utils"
+	"github.com/btwiuse/gods/lists/arraylist"
+	"github.com/btwiuse/gods/trees"
+	"github.com/btwiuse/gods/utils"
 	"strings"
 )
 

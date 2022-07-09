@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/emirpasic/gods?status.svg)](https://godoc.org/github.com/emirpasic/gods) [![Build Status](https://travis-ci.org/emirpasic/gods.svg)](https://travis-ci.org/emirpasic/gods) [![Go Report Card](https://goreportcard.com/badge/github.com/emirpasic/gods)](https://goreportcard.com/report/github.com/emirpasic/gods) [![PyPI](https://img.shields.io/pypi/l/Django.svg?maxAge=2592000)](https://github.com/emirpasic/gods/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/btwiuse/gods?status.svg)](https://godoc.org/github.com/btwiuse/gods) [![Build Status](https://travis-ci.org/emirpasic/gods.svg)](https://travis-ci.org/emirpasic/gods) [![Go Report Card](https://goreportcard.com/badge/github.com/btwiuse/gods)](https://goreportcard.com/report/github.com/btwiuse/gods) [![PyPI](https://img.shields.io/pypi/l/Django.svg?maxAge=2592000)](https://github.com/btwiuse/gods/blob/master/LICENSE)
 
 # GoDS (Go Data Structures)
 
@@ -123,8 +123,8 @@ Implements [List](#lists), [IteratorWithIndex](#iteratorwithindex), [EnumerableW
 package main
 
 import (
-	"github.com/emirpasic/gods/lists/arraylist"
-	"github.com/emirpasic/gods/utils"
+	"github.com/btwiuse/gods/lists/arraylist"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -160,8 +160,8 @@ Implements [List](#lists), [IteratorWithIndex](#iteratorwithindex), [EnumerableW
 package main
 
 import (
-	sll "github.com/emirpasic/gods/lists/singlylinkedlist"
-	"github.com/emirpasic/gods/utils"
+	sll "github.com/btwiuse/gods/lists/singlylinkedlist"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -197,8 +197,8 @@ Implements [List](#lists), [IteratorWithIndex](#iteratorwithindex), [EnumerableW
 package main
 
 import (
-	dll "github.com/emirpasic/gods/lists/doublylinkedlist"
-	"github.com/emirpasic/gods/utils"
+	dll "github.com/btwiuse/gods/lists/doublylinkedlist"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -253,7 +253,7 @@ Implements [Set](#sets), [JSONSerializer](#jsonserializer) and [JSONDeserializer
 ```go
 package main
 
-import "github.com/emirpasic/gods/sets/hashset"
+import "github.com/btwiuse/gods/sets/hashset"
 
 func main() {
 	set := hashset.New()   // empty
@@ -280,7 +280,7 @@ Implements [Set](#sets), [IteratorWithIndex](#iteratorwithindex), [EnumerableWit
 ```go
 package main
 
-import "github.com/emirpasic/gods/sets/treeset"
+import "github.com/btwiuse/gods/sets/treeset"
 
 func main() {
 	set := treeset.NewWithIntComparator() // empty (keys are of type int)
@@ -307,7 +307,7 @@ Implements [Set](#sets), [IteratorWithIndex](#iteratorwithindex), [EnumerableWit
 ```go
 package main
 
-import "github.com/emirpasic/gods/sets/linkedhashset"
+import "github.com/btwiuse/gods/sets/linkedhashset"
 
 func main() {
 	set := linkedhashset.New() // empty
@@ -355,7 +355,7 @@ Implements [Stack](#stacks), [IteratorWithIndex](#iteratorwithindex), [JSONSeria
 ```go
 package main
 
-import lls "github.com/emirpasic/gods/stacks/linkedliststack"
+import lls "github.com/btwiuse/gods/stacks/linkedliststack"
 
 func main() {
 	stack := lls.New()  // empty
@@ -382,7 +382,7 @@ Implements [Stack](#stacks), [IteratorWithIndex](#iteratorwithindex), [JSONSeria
 ```go
 package main
 
-import "github.com/emirpasic/gods/stacks/arraystack"
+import "github.com/btwiuse/gods/stacks/arraystack"
 
 func main() {
 	stack := arraystack.New() // empty
@@ -440,7 +440,7 @@ Implements [Map](#maps), [JSONSerializer](#jsonserializer) and [JSONDeserializer
 ```go
 package main
 
-import "github.com/emirpasic/gods/maps/hashmap"
+import "github.com/btwiuse/gods/maps/hashmap"
 
 func main() {
 	m := hashmap.New() // empty
@@ -467,7 +467,7 @@ Implements [Map](#maps), [IteratorWithKey](#iteratorwithkey), [EnumerableWithKey
 ```go
 package main
 
-import "github.com/emirpasic/gods/maps/treemap"
+import "github.com/btwiuse/gods/maps/treemap"
 
 func main() {
 	m := treemap.NewWithIntComparator() // empty (keys are of type int)
@@ -498,7 +498,7 @@ Implements [Map](#maps), [IteratorWithKey](#iteratorwithkey), [EnumerableWithKey
 ```go
 package main
 
-import "github.com/emirpasic/gods/maps/linkedhashmap"
+import "github.com/btwiuse/gods/maps/linkedhashmap"
 
 func main() {
 	m := linkedhashmap.New() // empty (keys are of type int)
@@ -526,7 +526,7 @@ Implements [BidiMap](#maps), [JSONSerializer](#jsonserializer) and [JSONDeserial
 ```go
 package main
 
-import "github.com/emirpasic/gods/maps/hashbidimap"
+import "github.com/btwiuse/gods/maps/hashbidimap"
 
 func main() {
 	m := hashbidimap.New() // empty
@@ -556,8 +556,8 @@ Implements [BidiMap](#maps), [IteratorWithKey](#iteratorwithkey), [EnumerableWit
 package main
 
 import (
-	"github.com/emirpasic/gods/maps/treebidimap"
-	"github.com/emirpasic/gods/utils"
+	"github.com/btwiuse/gods/maps/treebidimap"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -609,7 +609,7 @@ package main
 
 import (
 	"fmt"
-	rbt "github.com/emirpasic/gods/trees/redblacktree"
+	rbt "github.com/btwiuse/gods/trees/redblacktree"
 )
 
 func main() {
@@ -658,7 +658,7 @@ func main() {
 }
 ```
 
-Extending the red-black tree's functionality  has been demonstrated in the following [example](https://github.com/emirpasic/gods/blob/master/examples/redblacktreeextended/redblacktreeextended.go).
+Extending the red-black tree's functionality  has been demonstrated in the following [example](https://github.com/btwiuse/gods/blob/master/examples/redblacktreeextended/redblacktreeextended.go).
 
 #### AVLTree
 
@@ -675,7 +675,7 @@ package main
 
 import (
 	"fmt"
-	avl "github.com/emirpasic/gods/trees/avltree"
+	avl "github.com/btwiuse/gods/trees/avltree"
 )
 
 func main() {
@@ -742,7 +742,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/trees/btree"
+	"github.com/btwiuse/gods/trees/btree"
 )
 
 func main() {
@@ -813,8 +813,8 @@ Implements [Tree](#trees), [ReverseIteratorWithIndex](#reverseiteratorwithindex)
 package main
 
 import (
-	"github.com/emirpasic/gods/trees/binaryheap"
-	"github.com/emirpasic/gods/utils"
+	"github.com/btwiuse/gods/trees/binaryheap"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -912,7 +912,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/sets/treeset"
+	"github.com/btwiuse/gods/sets/treeset"
 )
 
 type User struct {
@@ -1114,7 +1114,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/sets/treeset"
+	"github.com/btwiuse/gods/sets/treeset"
 )
 
 func printSet(txt string, set *treeset.Set) {
@@ -1225,7 +1225,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/maps/treemap"
+	"github.com/btwiuse/gods/maps/treemap"
 )
 
 func printMap(txt string, m *treemap.Map) {
@@ -1297,7 +1297,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/maps/hashmap"
+	"github.com/btwiuse/gods/maps/hashmap"
 )
 
 func main() {
@@ -1319,7 +1319,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/lists/arraylist"
+	"github.com/btwiuse/gods/lists/arraylist"
 )
 
 func main() {
@@ -1344,7 +1344,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/maps/hashmap"
+	"github.com/btwiuse/gods/maps/hashmap"
 )
 
 func main() {
@@ -1365,7 +1365,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/emirpasic/gods/lists/arraylist"
+	"github.com/btwiuse/gods/lists/arraylist"
 )
 
 func main() {
@@ -1391,7 +1391,7 @@ Internally these all use the _utils.Sort()_ method:
 ```go
 package main
 
-import "github.com/emirpasic/gods/utils"
+import "github.com/btwiuse/gods/utils"
 
 func main() {
 	strings := []interface{}{}                  // []
@@ -1419,8 +1419,8 @@ Usage:
 package main
 
 import (
-	"github.com/emirpasic/gods/lists/arraylist"
-	"github.com/emirpasic/gods/utils"
+	"github.com/btwiuse/gods/lists/arraylist"
+	"github.com/btwiuse/gods/utils"
 )
 
 func main() {
@@ -1499,7 +1499,7 @@ go fmt ./... && gofmt -s -w . && go vet ./... && go get ./... && go test ./... &
 
 ### License
 
-This library is distributed under the BSD-style license found in the [LICENSE](https://github.com/emirpasic/gods/blob/master/LICENSE) file.
+This library is distributed under the BSD-style license found in the [LICENSE](https://github.com/btwiuse/gods/blob/master/LICENSE) file.
 
 ### Sponsors
 
